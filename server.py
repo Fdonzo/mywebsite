@@ -8,7 +8,7 @@ import os
 import json;
 
 import firebase_admin
-#from firebase_admin import credentials
+from firebase_admin import credentials
 from firebase_admin import firestore
 
 
@@ -17,7 +17,7 @@ from flask_wtf import Form,FlaskForm
 from wtforms import StringField,SubmitField
 from wtforms import TextAreaField
 #from wtforms.validators import DataRequired, Length
-from wtforms.validators import Required
+#from wtforms.validators import Required
 
 
 #VALIDATION class
@@ -40,9 +40,14 @@ firebase_admin.initialize_app(credential)
 db = firestore.Client()
 """
 #VALIDATE CREDENTIALS & INITIALISATION
-firebase_admin.initialize_app()
-db = firestore.Client()
-#SERVER SET_UP
+cred = credentials.ApplicationDefault()
+firebase_admin.initialize_app(cred, {
+  'projectId': 'my-website-336004',
+})
+
+db = firestore.client()
+
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -51,9 +56,9 @@ def my_home():
 
 @app.route("/<string:page_name>")
 def html_page(page_name):
-    form = ContactForm()
+    #form = ContactForm()
     if page_name=="contact.html":
-        return render_template('contact.html', form=form)
+        return render_template('contact.html')
     return render_template(page_name)
 
 #EMAIL-SUBMISSION AND DATABASE LOGICS
@@ -91,7 +96,7 @@ def submit_form():
 
     else:
         return render_template("contact.html")
-        
+
 """
 if __name__ =='__main__':
     server.run()
