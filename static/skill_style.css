@@ -1,0 +1,105 @@
+body{
+padding: 0 0.5%;
+
+}
+.main-heading{
+  display: flex;
+  justify-content: center;
+  color: #0a3f74;
+
+}
+.table{
+  width: 100%;
+  border:1px solid #0a3f74;
+  border-collapse: collapse;
+  height:500px;
+  background-color:#F0F8FF;
+  margin-bottom: 15px;
+
+}
+
+.row {
+
+}
+.column{
+    border-right:1px solid #0a3f74;
+    border-bottom: 0.5px solid #0a3f74;
+    border-top: 0.5px solid #0a3f74;
+    border-collapse: collapse;
+    padding-left: 15px;
+
+}
+
+.table-heading{
+  height: 40px;
+  /*border:2px solid blue;*/
+  border-collapse: collapse;
+  color: #0a3f74;
+  text-align: center;
+}
+
+.bottom-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*border:2px solid black;*/
+  bottom: 0;
+  height: 100px;
+  align-items: center;
+  padding: 0 2% 0 2%
+
+
+}
+
+.previous, .home, .next{
+  background-color: #F0F8FF;
+  border-radius: 10%;
+  color: #0a3f74;
+  text-decoration: none;
+  height: 45px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid  #0a3f74;
+  font-size: 18px;
+
+}
+
+.previous:hover, .home:hover, .next:hover{
+  opacity: 0.7;
+  width: 92px;
+  height: 47px;
+  border: 1.5px solid  #0a3f74
+
+}
+
+
+/* General SKILLs CSS STYLE*/
+
+.top-hr{
+  height: 2px;
+  border-width: 0;
+  background-color: #0a3f74;
+  margin-bottom:10px;
+  margin-top: 10px;
+  width: 98%;
+  margin-right: 2%;
+}
+
+.generals_skills_details{
+  background-color:#F0F8FF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 150px;
+
+
+
+}
+.attributes{
+  line-height: 2;
+
+
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="title">Fumba Donzo</title>
+    <meta name="viewport:" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+     <link rel="shortcut icon" href="{{ url_for('static', filename='fav1.ico') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/index.js" ></script>
+
+
+  </head>
+  <body>
+    <!--first div inside body element -->
+    <div id="top">
+      <!--
+ <div class="test-conatiner">
+<ul class="ul">
+  <li class="li">
+    <a>navigation</a>
+
+  </li>
+  <li class="li">
+    <a>menu</a>
+  </li>
+</ul>
+
+
+  </div>
+-->
+
+      <!--first div child inside div top -->
+      <div class="nav-bar">
+        <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active1" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+      <!--  <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      -->
+        <li class="nav-item">
+          <a class="nav-link disabled1" href="#">Contact</a>
+        </li>
+
+      </ul>
+
+      </div>
+
+        <!--second div child inside div top -->
+      <div id="top-content">
+        <div id = first-flexbox>
+          <h1 class="first-word main-heading">Fumba Donzo </h1>
+          <hr>
+          <h4 class="first-word sub-heading"> Curriculum Vitae</h4>
+        </div>
+        <div id="second-flexbox">
+          <img class="top-content-image" src="../static/assets/myhome_page.jpg" alt="" >
+        </div>
+      </div>
+      <img id="top-main-image" src="../static/assets/Language_Madinka_2005-1920x960.png" alt="">
+   </div>
+
+  <!--second div inside body element -->
+    <div id="middle">
+      <div class="slideshow-container">
+
+      <!--<h1> middle classs</h1>-->
+      <div class="middle-content" id = "first">
+        <iframe class='frame' src="profile.html" allow='fullscreen'></iframe>
+
+      </div>
+
+      <div class="middle-content" id="second">
+      <iframe class='frame' src="skills.html" allow ='fullscreen'></iframe>
+    </div>
+
+      <div class="middle-content" id="third">
+        <iframe class='frame' src="experience.html" allow = 'fullscreen'></iframe>
+      </div>
+      <!--
+      <div class="middle-content" id="fourth">
+        <iframe class='frame' src="project.html" allow='fullscreen'></iframe>
+      </div>
+    -->
+      <div class="middle-content" id="fifth">
+        <iframe class='frame' src="contact.html" allow="fullscreen"></iframe>
+      </div>
+      <div id="pointer">
+        <a class="prev"  href="#">&#10094;</a>
+        <a class="next"  href="#">&#10095;</a>
+      </div>
+    </div>
+       <br>
+      <div class="dot-container">
+        <span class="dot first" ></span>
+        <span class="dot second"></span>
+        <span class="dot third"></span>
+        <!--<span class="dot fourth"></span>-->
+        <span class="dot firth"></span>
+      </div>
+    </div>
+    <!--third div inside body element -->
+    <div id="bottom">
+
+      <!--first div child inside div bottom-->
+      <div class="icons linked">
+        <img src="../static/svg/001-linkedin.svg" alt="">
+        <!--<input type="button" name="" value="button" onload='window.loaction.href="mailto:donzo.fumba87@gmail.com"'>-->
+      </div>
+
+         <!--second div child inside div bottom-->
+      <div class="icons email">
+     <img src="../static/svg/001-email.svg" alt="">
+      </div>
+
+      <div class="icons github">
+     <img src="../static/svg/001-github.svg" alt="">
+      </div>
+
+      <div class="copyright">
+        <p>&copy;</p>
+      </div>
+
+    </div>
+
+</html>
