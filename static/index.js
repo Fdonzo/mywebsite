@@ -76,7 +76,7 @@ $("#first-flexbox").on(
   {mouseenter:function(event3){
      const htmlElement = `<p class="temporary"> I am an experienced Geoscientist with more than 7 years experience in the Resource Industry.
      Currently, I work as a Frealance Software - and Google-Cloud Developer.
-     I have completed both an undragraduate degree in Earth Sciences and a Master in Information Technology.
+     I have completed both an undragraduate degree in Earth Sciences and a Master of Information Technology.
      In Addition, I am a certified Google Cloud Platform Professional Developer and AWS Cloud Practioner.
      </p>`;
      $("#first-flexbox h4").after(htmlElement);
@@ -158,12 +158,12 @@ slides[slideIndex-1].style.display = "block";
 
 $('#pointer').on('click', function(event3){
   if(event3.target.className==='next'){
-    plusSlides(1)
-    currentSlide(1);
+    plusSlides(1);
+
   }
   else if(event3.target.className==='prev'){
-    plusSlides(-1)
-    currentSlide(-1)
+    plusSlides(-1);
+
   }
 
 
@@ -189,6 +189,8 @@ $('.dot-container').on('click', function(event8){
 $('.frame').on('load', function(){
     $('.frame').contents().find('.bottom-navigation').hide();
     $('.frame').contents().find('.submission').hide();
+    $('.frame').contents().find('.second,.fifth, .fourth, .third').hide();
+    $('.frame').contents().find('.general_skills-container').hide()
 
 });
 
