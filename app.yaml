@@ -1,4 +1,4 @@
 ---
 entrypoint: "gunicorn -b:$PORT main:app"
-env: stand
+env: standard
 runtime: python39

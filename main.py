@@ -40,14 +40,13 @@ firebase_admin.initialize_app(credential)
 db = firestore.Client()
 """
 #VALIDATE CREDENTIALS & INITIALISATION
-"""
+
 cred = credentials.ApplicationDefault()
 firebase_admin.initialize_app(cred, {
   'projectId': 'my-website-336004',
 })
 
 db = firestore.client()
-"""
 
 app = Flask(__name__)
 
