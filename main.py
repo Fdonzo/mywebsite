@@ -3,15 +3,18 @@ import datetime
 from flask import Flask, render_template, request,redirect,url_for
 
 #GOOGLE FIREBASE API
-"""
+
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+
+"""
 #FIREBASE CREDENTIAL CHECK
 credential= credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(credential)
 
 db = firestore.Client()
+
 """
 #VALIDATE CREDENTIALS & INITIALISATION
 cred = credentials.ApplicationDefault()
