@@ -2,12 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title id="title">Fumba Donzo</title>
-    <meta name="viewport:" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
      <link rel="shortcut icon" href="{{ url_for('static', filename='fav1.ico') }}">
+     <title id="title">Fumba Donzo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../static/index.js" ></script>
 
@@ -16,22 +15,6 @@
   <body>
     <!--first div inside body element -->
     <div id="top">
-      <!--
- <div class="test-conatiner">
-<ul class="ul">
-  <li class="li">
-    <a>navigation</a>
-
-  </li>
-  <li class="li">
-    <a>menu</a>
-  </li>
-</ul>
-
-
-  </div>
--->
-
       <!--first div child inside div top -->
       <div class="nav-bar">
         <ul class="nav flex-column">
@@ -58,7 +41,7 @@
 
         <!--second div child inside div top -->
       <div id="top-content">
-        <div id = first-flexbox>
+        <div id="first-flexbox">
           <h1 class="first-word main-heading">Fumba Donzo </h1>
           <hr>
           <h4 class="first-word sub-heading"> Curriculum Vitae</h4>
@@ -113,21 +96,21 @@
 
       <!--first div child inside div bottom-->
       <div class="icons linked">
-        <img src="../static/svg/001-linkedin.svg" alt="">
+        <img class="image"  src="../static/svg/001-linkedin.svg" alt="">
         <!--<input type="button" name="" value="button" onload='window.loaction.href="mailto:donzo.fumba87@gmail.com"'>-->
       </div>
 
          <!--second div child inside div bottom-->
       <div class="icons email">
-     <img src="../static/svg/001-email.svg" alt="">
+     <img class="image" src="../static/svg/001-email.svg" alt="">
       </div>
 
       <div class="icons github">
-     <img src="../static/svg/001-github.svg" alt="">
+     <img class="image" src="../static/svg/001-github.svg" alt="">
       </div>
 
-      <div class="copyright">
-        <p>&copy;</p>
+      <div  class="copyright">
+        <p class="copyright-text">&copy;</p>
       </div>
 
     </div>

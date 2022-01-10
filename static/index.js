@@ -1,6 +1,6 @@
 //wait for the DOM to be ready
-$(document).ready(function(e,t){
-  console.log('e', e, t)
+$(document).ready(function(){
+  //console.log('e', e, t)
 
 //$(document).on("load", function(e){ console.log('e', e)});
 
@@ -189,7 +189,7 @@ $('.dot-container').on('click', function(event8){
 $('.frame').on('load', function(){
     $('.frame').contents().find('.bottom-navigation').hide();
     $('.frame').contents().find('.submission').hide();
-    $('.frame').contents().find('.second,.fifth, .fourth, .third').hide();
+    $('.frame').contents().find('.second, .fifth, .fourth, .third').hide();
     $('.frame').contents().find('.general_skills-container').hide()
 
 });
@@ -204,9 +204,7 @@ var copyrightHtmlElement = $(".copyright p");
 })();
 
 
-$(".bottom-navigation").on('click', function(event){
-  console.log(event);
-});
+
 
 
 
