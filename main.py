@@ -20,6 +20,7 @@ firebase_admin.initialize_app(cred, {
 })
 
 db = firestore.client()
+
 app = Flask(__name__)
 
 @app.route("/")
