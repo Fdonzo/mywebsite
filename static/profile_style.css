@@ -163,35 +163,112 @@ table,th,td{
   border: 1.5px solid  #0a3f74
 
 }
-/*
 
-*{
-    box-sizing: border-box;
+@media screen and (max-width: 1050px){
+
+  .centre-side{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+  }
 }
 
-.container h1,p{
-  color: blue;
-  text-align: center;
+
+@media screen and (max-width: 950px){
+
+  .left-side img {
+    width: 60%;
+    height: 55%;
+    left:50px;
+    top: 110px;
+    border-radius: 15px;
+    position: absolute;
+  }
+
+.centre-side td{
+
+font-size: 14px
+
+}
+.centre-side{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10%;
+}
+.table-heading{
+
+font-size: 14px
 }
 
-.container::after{
-  content:"";
-  clear: both;
-  display: table;
+.right-side p{
+  font-size: 14px;
+}
 }
 
-.container-item{
-  float: left;
-  width: 33.3%;
-  padding: 50px;
+@media screen and (max-width: 750px){
+
+  .left-side img {
+    width: 60%;
+    height: 45%;
+    left:40px;
+    top: 120px;
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .centre-side{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 12%;
+  }
+
+  .centre-side td{
+
+  font-size: 12px
+  }
+  .table-heading{
+
+  font-size: 12px
+  }
+
+  .right-side p{
+    font-size: 12px;
+  }
+
 }
 
-.left-side img {
-  width: 100px;
-}
+@media screen and (max-width: 550px){
 
-.rigt-side{
-  float: left;
-  width: 40%;
-  padding: 40px;
+  .left-side img {
+
+    width: 60%;
+    height: 30%;
+    left:30px;
+    top: 140px;
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .centre-side{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20%;
+  }
+
+  .centre-side td{
+
+  font-size: 10px
+  }
+
+  .left-side{
+  display: flex;
+  align-items: center;
+  }
+  .table-heading{
+
+  font-size: 10px
+  }
+  .right-side p{
+    font-size: 10px;
+  }
 }

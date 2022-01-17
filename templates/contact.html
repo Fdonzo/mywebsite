@@ -2,39 +2,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/contact_style.css">
     <link rel="shortcut icon" href="{{ url_for('static', filename='fav2.ico') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../static/contact.js" ></script>
+    <title>contact</title>
   </head>
   <body>
   <div class="contact">
     <h4 class="name"> Don't hesitate to get in touch</h4>
-    <form action="submit_form" method="post" class='contact-form'>
+    <form action="submit_form" method="post" class='contact-form' novalidate>
+
+    {{form.csrf_token}}
+
     <div class='fullname'>
-    <input id = "csrf_token" name = "csrf_token" type = "hidden" />
-    <label class='name' for="name" >
-      Full Name:
-    </label>
-    <input class ="input-field" type="text" id="name" name="name" placeholder="Print your full name">
+
+      {{form.name.label}}
+      {{form.name(class="name-input")}}
+
+      {% if form.name.errors %}
+          <ul class="error-message">
+            {% for error in form.name.errors %}
+              <li class="error">{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
   </div>
   <div class='email-address'>
-  <label class='name' for="email">
-   Email address:
-  </label>
-  <input class ="input-field" type="email" id="email" name="email" placeholder="you@email.com">
+
+   {{form.email.label}}
+   {{form.email(class="email-input")}}
+   {% if form.email.errors %}
+       <ul class="error-message">
+         {% for error in form.email.errors %}
+           <li class="error">{{ error }}</li>
+             {% endfor %}
+         </ul>
+     {% endif %}
    </div>
 
    <div class='content'>
-     <label class='name' for="name">
-       Message:
-     </label>
-    <textarea class="message-field" type="text" id="body" name="body" placeholder="Write your message"></textarea>
+
+       {{form.body.label}}
+      {{form.body(class="message-body")}}
+
+        {% if form.body.errors %}
+            <ul class="error-for-message-body">
+              {% for error in form.body.errors %}
+                <li class="error">{{ error }}</li>
+                  {% endfor %}
+              </ul>
+          {% endif %}
+      
+
 
   </div>
   <div class='submission'>
-    <input class='submit-field' type="submit" value="Send">
+
+    {{form.submit}}
   </div>
+
+
   </form>
 
 

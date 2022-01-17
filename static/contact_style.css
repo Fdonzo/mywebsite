@@ -1,49 +1,78 @@
 
+* {
+  box-sizing: border-box;
+}
+
 body{
   padding:2%;
 
 }
 
 .contact{
-
   display: flex;
   align-items: center;
   border-top: 1.5px #0a3f74 solid;
   border-bottom: 1.5px #0a3f74 solid;
-  height:650px;
+  height:700px;
   flex-direction: column;
   background-color: #F0F8FF;
 
+
+}
+.errors{
+  color: red;
+  /*border:2px solid black;*/
 }
 
 .name{
   color: #0a3f74;
+
 }
 
+label{
+color: #0a3f74;
+margin-left: 1%; 
+}
 .contact-form{
-  padding-top: 1%;
 
-  width: 55%;
-  height: 80%;
+  width: 52%;
+  height: 85%;
   display: flex;
-  /*justify-content: space-around;*/
-  /*border: 2px solid blue;*/
   flex-direction: column;
   align-items: center;
 }
+
 .fullname, .email-address{
   display: flex;
   flex-direction: column;
   /*border: 2px black solid;*/
-  height: 80px;
-  justify-content:space-around;
+  height: 110px;
+  /*justify-content:space-between*/;
   width: 75%;
+  margin-bottom: 2%;
+
 }
-.input-field{
-  height: 45%;
-  margin-bottom:5%;
+.error-message{
+  margin: 0;
+  /*border:2px solid red;*/
+  padding: 0;
+  color: red;
+  height: 30%;
+  display:flex;
+  align-items: center;
+
+}
+.error{
+  margin-left: 5%;
+}
+.name-input, .email-input{
+  height: 40%;
+  margin-bottom:1%;
   border-radius: 5px;
   border-width: 1px;
+  margin-top: 1%;
+  /*border: 2px solid blue;*/
+  size: 20px;
 }
 
 .content{
@@ -52,31 +81,45 @@ body{
   flex-direction: column;
   /*border: 2px solid blue;*/
   width: 75%;
-  padding: 0
+  padding: 0;
+  margin-bottom: 2%;
 }
 
-.message-field{
-  height: 79%;
-  margin-top: 2%;
+.message-body{
+  height: 75%;
+  margin-top: 1%;
   border-radius: 5px;
   border-width: 1px;
-  margin-bottom: 0;
+  margin-bottom: 1%;
+}
+
+
+.error-for-message-body{
+  margin: 0;
+  /*border:2px solid red;*/
+  padding: 0;
+  color: red;
+  height:14%;
+  display: flex;
+  align-items: center;
 }
 
 .submission{
-  height: 50px;
+  height: 60px;
   /*border: 2px solid blue;*/
   width: 60%;
   display: flex;
   justify-content: center;
+
 }
-.submit-field{
+#submit{
   width: 50%;
   background-color:rgba(208,240,192);
   border-radius: 2px;
  color: #0a3f74;
  font-size: 18px;
  border-width: 1px;
+
 }
 
 .bottom-navigation{
@@ -113,4 +156,60 @@ body{
   height: 47px;
   border: 1.5px solid  #0a3f74
 
+}
+
+@media screen and (max-width: 1050px){
+
+  .contact-form{
+    padding-top: 1%;
+  /*border: 2px solid purple;*/
+    width: 65%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+
+  .contact-form{
+    padding-top: 1%;
+  /*border: 2px solid green;*/
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+@media screen and (max-width: 650px){
+
+  .contact-form{
+    padding-top: 1%;
+  /*border: 2px solid blue;*/
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 450px){
+
+  .contact-form{
+    padding-top: 1%;
+  /*border: 2px solid blue;*/
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
