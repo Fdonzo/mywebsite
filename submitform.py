@@ -12,4 +12,5 @@ class ContactForm(FlaskForm):
     Email("Enter a valid email address"),
     Length(min=6, max=35)])
     body = TextAreaField('Message:', validators=[InputRequired("Enter print your message above!"), Length(min=10, max=400)])
+    #recaptcha = RecaptchaField()
     submit = SubmitField('Send')

@@ -19,7 +19,7 @@
     <div class='fullname'>
 
       {{form.name.label}}
-      {{form.name(class="name-input")}}
+      {{form.name(class="name-input", placeholder="John James")}}
 
       {% if form.name.errors %}
           <ul class="error-message">
@@ -33,7 +33,7 @@
   <div class='email-address'>
 
    {{form.email.label}}
-   {{form.email(class="email-input")}}
+   {{form.email(class="email-input", placeholder="you@email.com")}}
    {% if form.email.errors %}
        <ul class="error-message">
          {% for error in form.email.errors %}
@@ -46,7 +46,7 @@
    <div class='content'>
 
        {{form.body.label}}
-      {{form.body(class="message-body")}}
+      {{form.body(class="message-body", placeholder="Write your message here")}}
 
         {% if form.body.errors %}
             <ul class="error-for-message-body">
@@ -55,12 +55,12 @@
                   {% endfor %}
               </ul>
           {% endif %}
-      
+
 
 
   </div>
   <div class='submission'>
-
+    
     {{form.submit}}
   </div>
 
